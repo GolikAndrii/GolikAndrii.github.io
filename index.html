@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <title>Front-End TEST. Calendar</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container__header">
+                <div class="container__header__buttons">
+                    <button id="add" class="container__header__buttons_button">Добавить</button>
+                    <button id="refresh" class="container__header__buttons_button">Обновить</button>
+                </div>
+                <div class="container__header__search">
+                    <i class="fas fa-search"></i>
+                    <input id="search" class="header__search__input" type="text" size="28" placeholder="Событие, дата или участник">
+                </div>
+            </div>
+
+            <div class="container__calendar-table">
+                <table id="calendar2" class="container__calendar-table__main-calendar">
+                    <thead>
+                    <tr class="container__calendar-table__main-calendar_main-row" >
+                        <td><i class="fas fa-chevron-left"></i></td>
+                        <td></td>
+                        <td><i class="fas fa-chevron-right"></i></td>
+                        <td><button id="today"><i class="fas fa-calendar-day" style="border: none;"></i> Сегодня</button></td>
+                        <td><button id="clear"><i class="fas fa-trash-alt" style="border: none;"></i> Очистить</button></td>
+                    </tr>
+                    <tr class="container__calendar-table__main-calendar_day-of-week">
+                        <td>Понедельник</td>
+                        <td>Вторник</td>
+                        <td>Среда</td>
+                        <td>Четверг</td>
+                        <td>Пятница</td>
+                        <td>Суббота</td>
+                        <td>Воскресенье</td>
+                    <tbody>
+                </table>
+            </div>
+        </div>
+    <script type="text/javascript" src="js/script.js"></script></body>
+</html>
