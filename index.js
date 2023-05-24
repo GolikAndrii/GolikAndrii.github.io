@@ -1,20 +1,13 @@
-const btn = document.getElementById("magic-btn");
-const clonedBtn = btn.cloneNode(true);
-clonedBtn.id = "magic-btn-2";
+// ЗАДАНИЕ 2
+// Выберите одну API из списка. Сделайте fetch запрос, 
+// разместите полученную от API информацию на странице html.
+async function loadNational(){
+    const response = await fetch("https://api.ipify.org?format=json");
+    const obj = await response.json();
+     console.log(obj);
+    const {ip} = obj;
 
-btn.addEventListener('click', () => {
-    clonedBtn.innerText = "Я изменю тебя"
-    clonedBtn.style.color="#ffffff"
-    clonedBtn.style.backgroundColor="#a78b71"
-    clonedBtn.style.fontSize="20px"
-    clonedBtn.style.margin="20px"
-    clonedBtn.style.borderRadius="10px"
-    clonedBtn.style.border="none"
-    clonedBtn.style.padding="15px"
-
-    document.body.appendChild(clonedBtn)
-})
-clonedBtn.addEventListener('click',()=>{
-    btn.style.color="#000000"
-    btn.style.backgroundColor="#9c4a1a"
-})
+    const textIp = document.getElementById("ipNumber");
+    textIp.innerText = ip;
+}
+loadNational();
