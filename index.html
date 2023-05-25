@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-    <title>Your IP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
 </head>
 <body>
-    <div>
-        <h1>Your IP is: </h1>
-        <p id="ipNumber"></p>
+    <div class="wrapper">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="container">
+            <div class="search-container">
+                <input class="input-search" type="text" placeholder="Please, enter a city name" id="city" value="Berlin">
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="result"></div>
+        </div>
     </div>
+<script src="./js/key.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
